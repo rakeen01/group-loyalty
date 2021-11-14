@@ -1,21 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
 
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Navigation, Footer, Dashboard, Transactions, Deals } from "./components";
 function App() {
   return (
-    <div className="Group Loyalty App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Under Construction</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn some React here.
-        </a>
-      </header>
+    <div className="App">
+      <Router>
+        <Navigation />
+        <Switch>
+          <Route path="/" exact component={() => <Dashboard />} />
+          <Route path="/transactions" exact component={() => <Transactions />} />
+          <Route path="/deals" exact component={() => <Deals />} />
+        </Switch>
+        <Footer />
+      </Router>
+
     </div>
   );
 }
