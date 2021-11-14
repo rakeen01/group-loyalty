@@ -15,7 +15,7 @@ function Dashboard() {
           <div class="col-lg-5">
             <h1 class="font-weight-light">Home</h1>
             <p>
-              Rakeen has a small dick
+              Rakeen has a small ****
             </p>
           </div>
         </div>
