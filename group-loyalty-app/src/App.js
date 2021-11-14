@@ -1,3 +1,4 @@
+import { Client, Environment } from "square";
 import logo from "./logo.svg";
 import "./App.css";
 
