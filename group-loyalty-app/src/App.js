@@ -1,3 +1,4 @@
+
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation, Footer, Dashboard, Transactions, Deals } from "./components";
@@ -13,6 +14,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
+
     </div>
   );
 }
